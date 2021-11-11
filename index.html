@@ -30,6 +30,76 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+            <div class="name form-content">
+              <div class="name__name-box is-halfWidth">
+                <p class="labels required-mark">名字</p>
+                <input type="text" class="input-area input-init" name="last-name" required>
+              </div>
+              <div class="name__name-box is-halfWidth">
+                <p class="labels required-mark">名前</p>
+                <input type="text" class="input-area input-init" name="first-name" required>
+              </div>
+            </div>
+            <div class="gender form-content">
+              <p class="labels">性別</p>
+              <div class="gender-contents">
+                <input type="radio" class="gender-input" name="gender" value="male" id="male" class="radio-size">
+                <label for="male">男性</label>
+                <input type="radio" class="gender-input" name="gender" value="female" id="female" class="radio-size">
+                <label for="female">女性</label>
+                <input type="radio" class="gender-input" name="gender" value="others" id="others" class="radio-size">
+                <label for="others">その他</label>
+              </div>
+            </div>
+            <div class="from form-content is-halfWidth">
+              <p class="labels">出身</p>
+              <div class="select-area">
+                <select class="input-area input-init" name="from">
+                  <option value="tokyo" label="東京" selected>東京</option>
+                  <option value="chiba" label="千葉">千葉</option>
+                  <option value="saitama" label="埼玉">埼玉</option>
+                  <option value="kanagawa" label="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="email form-content">
+              <p class="labels required-mark">Eメール</p>
+              <input type="email" class="input-area input-init" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="phone form-content">
+              <p class="labels">電話番号</p>
+              <input type="tel" class="input-area input-init" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <div class="password form-content">
+              <p class="labels required-mark">パスワード</p>
+              <input type="password" class="input-area input-init" name="password" required>
+            </div>
+            <div class="password form-content">
+              <p class="labels required-mark">パスワード(確認用)</p>
+              <input type="password" class="input-area input-init" name="password" required>
+            </div>
+            <div class="course form-content">
+              <p class="labels">希望コース</p>
+              <div class="course-option">
+                <input type="checkbox" id="frontend" class="checkbox" name="course" value="frontend">
+                <label class="course-option-text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" id="backend" class="checkbox" name="course" value="backend">
+                <label class="course-option-text" for="backend">バックエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" id="app" class="checkbox" name="course" value="app">
+                <label class="course-option-text" for="app">アプリ</label>
+              </div>
+            </div>
+            <div class="remarks form-content">
+              <p class="labels">備考</p>
+              <textarea class="input-area input-init" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="submit form-content">
+              <input type="submit" class="input-init button submit-btn is-fullWidth" value="アカウント作成">
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
